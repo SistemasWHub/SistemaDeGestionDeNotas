@@ -56,7 +56,7 @@ public class Main {
                     System.out.println("1. Ordenar por nombre ");
                     System.out.println("2. Ordenar por promedio ");
                     String eleccionOrdenInput = scanner.nextLine(); // 
-                    try {  // 
+                    try {  // para  asegurarnos de que la elección sea un número
                         int eleccionOrden = Integer.parseInt(eleccionOrdenInput);
                         if (eleccionOrden == 1) { // podríamos hacer un switch para que el usuario elija la opción de ordenar por nombre o por promedio, pero son solo dos opciones, así que se usa un condicional
                             ordenarPorNombre(); // Llamamos a la función ordenar por nombre 
@@ -184,4 +184,13 @@ public class Main {
 }
 /* Nota:
  * Usamos null como valor por defecto para que el código pueda ser reutilizado en un futuro, o más especificamente, el método.
+ * Cómo funciona la función ordenarPorNombre():?
+ * Estudiantes es la lista con los objetos de la clase Estudiante. Sort es un método predeterminado de la lista
+ *  que ordena los elementos de la lista según el comparador que se le pasa.  
+ *  El comparator se usa cuando queremos dar un orden especifico (menor a mayor o alfabeticamente)
+ *  el comparator es una interfaz. En este caso estamos comparando los nombres de los estudiantes
+ *  comparing es un método de la interfaz comparator que nos permite comparar dos objetos dependiendo la clave
+ *  que queramos. En este caso estamos comparando los nombres de los estudiantes. 
+ *  Por último Estudiante::getNombre es la refencia al método getNombre de la clase Estudiante
+ *  lo usamos para decirle al comparator que use el método para obtener el valor con el que vamos a comparar
  */
