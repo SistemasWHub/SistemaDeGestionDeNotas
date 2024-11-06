@@ -22,22 +22,22 @@ public class Materia { // Definimos la clase Materia para el programa
     public void setNombreMateria(String NombreMateria){ // Método para cambiar el nombre de la materia 
         this.nombreMateria = NombreMateria;
     }
-    public String getCodigoMateria (){
+    public String getCodigoMateria (){ //  Método para obtener el código de la materia 
         return this.codigoMateria;
     }
-    public void setCodigoMateria(String codigoMateria){
+    public void setCodigoMateria(String codigoMateria){ // Método para cambiar el código de la materia 
         this.codigoMateria = codigoMateria;
     }
-    public int getSemestre (){
+    public int getSemestre (){ // Método para obtener el semestre de la materia 
         return this.semestre;
     }
-    public void setSemestre(int semestre){
+    public void setSemestre(int semestre){ // Método para cambiar el semestre de la materia 
         this.semestre = semestre;
     }
-    public double getNota(){
+    public double getNota(){ // Método para obtener la nota de la materia 
         return this.nota;
     }
-    public void setNota(double nota){
+    public void setNota(double nota){ // Método para cambiar la nota de la materia 
         this.nota = nota;
     }
     
